@@ -1,8 +1,8 @@
 package progress
 
 import (
-	"github.com/rockwell-uk/go-logger/logger"
-	"github.com/rockwell-uk/uiprogress"
+	"github.com/db-tech-uk/go-logger/logger"
+	"github.com/db-tech-uk/uiprogress"
 )
 
 func SetupJob(jobName string, tasks []*Task) *Job {

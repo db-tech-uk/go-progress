@@ -5,10 +5,10 @@ import (
 	"math"
 	"time"
 
-	"github.com/rockwell-uk/csync/mutex"
-	"github.com/rockwell-uk/go-logger/logger"
-	"github.com/rockwell-uk/go-utils/timeutils"
-	"github.com/rockwell-uk/uiprogress"
+	"github.com/db-tech-uk/csync/mutex"
+	"github.com/db-tech-uk/go-logger/logger"
+	"github.com/db-tech-uk/go-utils/timeutils"
+	"github.com/db-tech-uk/uiprogress"
 )
 
 type ProgressJob interface {
@@ -17,7 +17,7 @@ type ProgressJob interface {
 }
 
 func RunJob(jobName, funcName string, job ProgressJob, magnitude int, setupInput interface{}, runInput interface{}) error {
-	var start time.Time = time.Now()
+	start := time.Now()
 	var took time.Duration
 
 	logger.Log(
@@ -122,7 +122,7 @@ func (j *Job) GetProgress() (float64, error) {
 		return 0, nil
 	}
 
-	var progress float64 = (done / j.Magnitude) * 100
+	progress := (done / j.Magnitude) * 100
 
 	return math.Ceil(progress*100) / 100, nil
 }

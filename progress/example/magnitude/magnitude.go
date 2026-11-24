@@ -1,4 +1,4 @@
-//nolint
+//nolint:all
 package main
 
 import (
@@ -7,11 +7,11 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/rockwell-uk/csync/counter"
-	"github.com/rockwell-uk/csync/waitgroup"
-	"github.com/rockwell-uk/go-logger/logger"
-	"github.com/rockwell-uk/go-progress/progress"
-	"github.com/rockwell-uk/uiprogress"
+	"github.com/db-tech-uk/csync/counter"
+	"github.com/db-tech-uk/csync/waitgroup"
+	"github.com/db-tech-uk/go-logger/logger"
+	"github.com/db-tech-uk/go-progress/progress"
+	"github.com/db-tech-uk/uiprogress"
 )
 
 var (

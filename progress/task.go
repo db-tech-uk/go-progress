@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/rockwell-uk/csync/mutex"
+	"github.com/db-tech-uk/csync/mutex"
 )
 
 type ProgressTask interface {

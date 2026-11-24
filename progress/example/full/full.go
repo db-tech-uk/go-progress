@@ -1,4 +1,4 @@
-//nolint
+//nolint:all
 package main
 
 import (
@@ -6,10 +6,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/rockwell-uk/csync/waitgroup"
-	"github.com/rockwell-uk/go-progress/progress"
-	"github.com/rockwell-uk/uiprogress"
-	"github.com/rockwell-uk/uiprogress/util/strutil"
+	"github.com/db-tech-uk/csync/waitgroup"
+	"github.com/db-tech-uk/go-progress/progress"
+	"github.com/db-tech-uk/uiprogress"
+	"github.com/db-tech-uk/uiprogress/util/strutil"
 )
 
 var steps = []string{
